@@ -8,6 +8,7 @@
     "node": ">=10.0.0"
   },
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write src/**/*.js",
     "build": "babel src -d dist --copy-files && npx tsc"
@@ -52,8 +53,11 @@
   "homepage": "https://github.com/zerodytrash/TikTok-Live-Connector#readme",
   "dependencies": {
     "axios": "^0.25.0",
+    "express": "^4.21.2",
     "protobufjs": "^6.11.2",
-    "websocket": "^1.0.34"
+    "tiktok-live-connector": "^1.2.2",
+    "websocket": "^1.0.34",
+    "ws": "^8.18.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.0",
